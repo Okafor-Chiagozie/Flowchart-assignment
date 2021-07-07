@@ -1,0 +1,9 @@
+name = input("Your name: ")
+
+if name == "Alice":
+    print("Hi, Alice.")
+else:
+    if name != "Alice":
+        age = int(input("Your age: "))
+        if age < 12:
+            print("You are not Alice, kiddo.")
