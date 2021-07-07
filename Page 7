@@ -1,0 +1,19 @@
+Is_raining = input("Is it raining? ")
+go = "Go outside"
+
+if Is_raining == "No":
+    print(go)
+elif Is_raining == "Yes":
+    Have_umbrella = input("Do you have an umbrella? ")
+    if Have_umbrella == "Yes":
+        print(go)
+    elif Have_umbrella == "No":
+        print("Wait a while")
+        yes = input("Is it raining? ")
+        if yes == "Yes":
+            while yes == "Yes":
+                print("Wait a while")
+                yes = input("Is it raining? ")
+            else:
+                print(go)
+
