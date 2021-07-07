@@ -1,0 +1,38 @@
+name = ""
+
+def access():
+    name = ""
+    if name == "":
+        print("Who are you?")
+        name = input("Write your name: ")
+        while name != "Joe":
+            print("Who are you?")
+            name = input("Write your name: ")
+        else:
+            print("Hello, Joe. What is the password? (It is a fish.)")
+           
+            
+    
+if name == "":
+    print("Who are you?")
+    name = input("Write your name: ")
+    while name != "Joe":
+        print("Who are you?")
+        name = input("Write your name: ")
+    else:
+        print("Hello, Joe. What is the password? (It is a fish.)")
+        password = input("Enter your password: ")
+        if password == "swordfish":
+            print("Access Granted.")
+        else:
+            while password !="swordfish":
+                access()
+                passw = input("Enter your password: ")
+                if passw == "swordfish":
+                    break
+            print("Access Granted.")
+
+                
+    
+
+
