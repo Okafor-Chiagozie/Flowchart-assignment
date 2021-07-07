@@ -1,0 +1,6 @@
+spam = int(input("Enter a whole number: "))
+
+if spam < 5:
+    print("Hello, World.")
+    spam += 1
+    print(spam)
